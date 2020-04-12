@@ -1,6 +1,6 @@
 //arreglo donde se encuentran las peliculas mas vistas en la actualidad
 const peliAct = ['tt4154796', 'tt0499549', 'tt0120338', 'tt2488496', 'tt4154756',
-		'tt0369610', 'tt6105098', 'tt0848228', 'tt5273488', 'tt2395427', 'tt1825683',
+		'tt0369610', 'tt6105098', 'tt0848228', 'tt2820852', 'tt2395427', 'tt1825683',
 		'tt1201607', 'tt2527336', 'tt4881806', 'tt2294629'];
 
 //arreglo de peliculas mas taquilleras en la historia

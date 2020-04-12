@@ -156,7 +156,7 @@ h5, h4, h3 {
     padding: 0px;
     height: 340px;
 }
-button {
+#lf, #rt {
 	position: relative;
 	top: 45%;
 	font-size: 2em;
