@@ -152,7 +152,7 @@ function peliculasActualidad(data, x, section, nClase){
 //petch que llama las peliculas actuales
 var nPeliActual = 1;
 for(var i = 0; i < peliAct.length; i++){
-fetch(`http://www.omdbapi.com/?apikey=9599534&i=${peliAct[i]}`)
+fetch(`https://www.omdbapi.com/?apikey=9599534&i=${peliAct[i]}`)
 	.then(res => res.json())
 	.then(data => {
 	peliculasActualidad(data, nPeliActual, 'peliculasActuales', 0);
@@ -164,7 +164,7 @@ fetch(`http://www.omdbapi.com/?apikey=9599534&i=${peliAct[i]}`)
 //fetch que llama las peliculas en la historia
 var nPeliHistoricas = 1;
 for(var i = 0; i < peliHist.length; i++){
-fetch(`http://www.omdbapi.com/?apikey=9599534&i=${peliHist[i]}`)
+fetch(`https://www.omdbapi.com/?apikey=9599534&i=${peliHist[i]}`)
 	.then(res => res.json())
 	.then(data => {
 	peliculasActualidad(data, nPeliHistoricas, 'peliculasHistoricas', 1);
@@ -176,7 +176,7 @@ fetch(`http://www.omdbapi.com/?apikey=9599534&i=${peliHist[i]}`)
 //fetch que llama a las series mas vistas
 var nSeries = 1;
 for(var i = 0; i < series.length; i++){
-fetch(`http://www.omdbapi.com/?apikey=9599534&i=${series[i]}`)
+fetch(`https://www.omdbapi.com/?apikey=9599534&i=${series[i]}`)
 	.then(res => res.json())
 	.then(data => {
 	// console.log(data);
