@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rating Now</title>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header><h1 align="center" id="inicio">Rating <br> Now</h1>	
+	</header>
+	<p style="display: flex; justify-content: flex-end; margin-top: 0px; background-image: linear-gradient(90deg,transparent, rgba(0, 0, 0, 0.2)); font-family: cursive; " >Search to see if your favorite movie or serie is between the highest grossing<input type="text" name="busqueda" id="buscar" placeholder="Search..."></p>
+	<nav><ul>
+		<li><a href="#peliculasActuales">Current movies</a></li>
+		<li><a href="#peliculasHistoricas">Historical Movies</a></li>
+		<li><a href="#series">Series</a></li>
+		<li><a href="#noticias">News</a></li>
+	</ul></nav>
+	<section id="busqueda"></section>
+	<section id="peliculasActuales">
+		<h1 class="titulo">Highest Grossing Movies</h1></section>
+		<h4 class="ver" onclick="verMas('peliculasActuales', 0)">See more <img src="imagenes/flecha.png" height="8px"></h4>
+	
+	<section id="peliculasHistoricas">
+		<h1 class="titulo">Highest Grossing Films in History</h1></section>
+		<h4 class="ver" onclick="verMas('peliculasHistoricas', 1)">See more <img src="imagenes/flecha.png" height="8px"></h4>
+	<section id="series">
+		<h1 class="titulo">Most Viewed Series</h1></section>
+		<h4 class="ver" onclick="verMas('series', 2)">See more <img src="imagenes/flecha.png" height="8px"></h4>
+	<aside style="position: fixed; display: flex;  top: 90%;" id="flo">
+		<a href="#inicio" ><img src="imagenes/subir.jpg" width="50px" style="border-radius: 30px"></a></aside>
+	<article id="noticias"><h1>News</h1>
+		<div id="not">
+			<button id="lf" onclick="slideNoticias(-1)"><<</button>
+			<button onclick="slideNoticias(1)" id="rt">>></button>
+			<ul id="root">
+			<li class="noticias" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('imagenes/avenger.jpg');"> 
+			<h2>Avengers: Endgame</h2>
+			<p align="justify">Año: 2019<br>
+			Presupuesto: 450.000.000 $<br>
+			Recaudación: 2.797.800.564 $<br><br>
+			La espectacular y épica Vengadores: Endgame ya es la película más taquillera de la historia. Aunque le ha costado más de lo que parecía en un principio, tres meses después de su estreno y un reestreno de por medio con metraje añadido, el film de Marvel consigue arrebatar a Avatar el honor de ser la película más taquillera durante la última década.</p></li>
+			<li class="noticias" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagenes/thrones.jpg');">
+			<h2>Game of thrones</h2>
+			<p align="justify">La serie de televisión de fantasía medieval creada por David Benioff  alcanzó su pico de audiencia con el final de su cuarta temporada que alcanzó un total de 7.1 millones de espectadores.</p>
+		</li>
+			<li class="noticias" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagenes/family.jpg');"> 
+			<h2>Modern Family</h2>
+			<p align="justify">La sitcom que ganó el premio como ‘Mejor Comedia en la pasada entrega de los Premios Emmy ha logrado un total de 12.61 millones de televidentes, lo que la convierte en una de las series con mayor sintonía en estos últimos años.</p>
+		</li>
+		<li class="noticias" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagenes/wind.jpg');">
+			<h2>Gone with the wind</h2>
+			<p align="justify">La película fue inmensamente popular, convirtiéndose en la película más rentable hasta aquel momento, manteniendo esa posición durante más de un cuarto de siglo. Si se ajustan sus ingresos de acuerdo a la inflación, sigue siendo la película de mayor éxito en taquilla de la historia.</p>
+		</li></ul></div>
+	</article>
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
